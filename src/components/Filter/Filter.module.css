@@ -1,0 +1,110 @@
+.filter__form {
+  margin: 0 auto;
+  display: flex;
+  gap: 18px;
+  width: 870px;
+  align-items: flex-end;
+}
+
+.select__block {
+  display: flex;
+  gap: 18px;
+}
+
+.select__mileage,
+.select__price,
+.select__brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.select__label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  color: #8a8a89;
+}
+
+.mileage__to,
+.mileage__from,
+.price,
+.brand {
+  box-sizing: border-box;
+  width: 224px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  background-color: #f7f7fb;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(20 / 18);
+  color: #121417;
+}
+
+.option {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: rgba(18, 20, 23, 0.2);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+}
+
+.price {
+  width: 125px;
+}
+.mileage__wrap {
+  position: relative;
+}
+.mileage__from {
+  width: 160px;
+  padding-left: 75px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 1px solid rgba(18, 20, 23, 0.1);
+}
+
+.mileage__to {
+  width: 160px;
+  padding-left: 53px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.btn__form {
+  width: 136px;
+  padding: 14px 44px;
+  background-color: #3470ff;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(20 / 14);
+}
+
+.btn__form:hover,
+.btn__form:focus {
+  background-color: #0b44cd;
+}
+
+.span__input__to,
+.span__input__from {
+  position: absolute;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(20 / 18);
+  color: #121417;
+}
+.span__input__from {
+  top: 14px;
+  left: 24px;
+}
+.span__input__to {
+  top: 14px;
+  right: 115px;
+}

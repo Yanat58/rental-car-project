@@ -1,0 +1,31 @@
+header {
+  display: contents;
+  border-bottom: 2px solid #ececec;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+
+  box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(
+    145deg,
+    rgb(245, 245, 80, 0.8),
+    rgb(64, 73, 250, 0.8)
+  );
+}
+
+.logo__img {
+  margin-left: 80px;
+}
+
+.logo {
+  margin-left: 15px;
+  font-weight: 600;
+  font-size: 32px;
+  text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(90deg, #6e98f3, #232a7b);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

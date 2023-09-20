@@ -1,0 +1,123 @@
+.catalog__item {
+  width: 274px;
+  background-color: #fff;
+  border-radius: 14px;
+}
+
+.img__box {
+  position: relative;
+  max-width: 100%;
+  height: 268px;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.img__car {
+  width: 274px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.btn__heard {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.svg__heard {
+  fill: #fff;
+}
+
+.svg__heardfull {
+  fill: #3470ff;
+}
+
+.svg__heard:focus,
+.svg__heard:hover {
+  fill: #3470ff;
+}
+
+.car {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 8px;
+  font-weight: 500;
+  color: #000;
+  max-height: 24px;
+  overflow: auto;
+}
+
+.car__name {
+  color: #121417;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.car__name__color {
+  font-family: 'Inter';
+  color: #3470ff;
+}
+
+.car__price {
+  margin-left: auto;
+  margin-right: 9px;
+  color: #000;
+}
+
+.location,
+.detalis {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 0 8px;
+
+  max-height: 18px;
+  overflow: auto;
+}
+
+.location {
+  margin-bottom: 4px;
+}
+
+.detalis {
+  margin-bottom: 28px;
+}
+
+.location__details,
+.details__name {
+  padding-right: 8px;
+  font-size: 12px;
+  line-height: 1.3;
+  color: rgba(18, 20, 23, 0.5);
+  border-right: 1px solid rgba(18, 20, 23, 0.1);
+}
+
+.location__details:last-child,
+.details__name:last-child {
+  border-right: none;
+}
+
+.btn__car {
+  width: 100%;
+  padding: 12px;
+  background-color: #3470ff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn__car:hover,
+.btn__car:focus {
+  background-color: #0b44cd;
+}

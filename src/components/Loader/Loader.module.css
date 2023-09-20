@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    height: 100px;
+  
+    color:#1c66fa;
+  }
+  
+  .loader {
+    width: 40px;
+    height: 40px;
+    fill: currentColor;
+  }
