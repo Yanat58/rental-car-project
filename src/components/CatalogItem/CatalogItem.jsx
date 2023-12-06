@@ -15,8 +15,9 @@ export const CatalogItem = ({ car }) => {
   const dispatch = useDispatch();
   const favoriteCheck = favoriteCars?.some(item => item.id === car.id);
 
-  const city = car.address.split(',')[1];
-  const country = car.address.split(',')[2];
+  const addressParts = car.address.split(',');
+  const city = addressParts[1];
+  const country = addressParts[2];
   const functionalitiesNumber = Math.floor(Math.random() * 3);
   const n = functionalitiesNumber;
 
