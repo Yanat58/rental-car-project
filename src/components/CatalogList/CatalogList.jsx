@@ -35,5 +35,5 @@ export const CatalogList = ({ cars }) => {
 };
 
 CatalogList.prototype = {
-  car: PropTypes.object.isRequired,
+  cars: PropTypes.array.isRequired,
 };
