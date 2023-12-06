@@ -99,5 +99,5 @@ export const CatalogItem = ({ car }) => {
 };
 
 CatalogItem.prototype = {
-  car: PropTypes.array.isRequired,
+  car: PropTypes.object.isRequired,
 };

@@ -132,5 +132,5 @@ export const Modal = ({ car, onClose }) => {
 
 Modal.propTypes = {
   onClose: PropTypes.func.isRequired,
-  car: PropTypes.array.isRequired,
+  car: PropTypes.object.isRequired,
 };
