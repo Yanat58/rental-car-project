@@ -18,8 +18,8 @@ export const CatalogItem = ({ car }) => {
   console.log(car);
   console.log(car.address);
 
-  const city = car.address.split(', ')[1];
-  const country = car.address.split(', ')[2];
+  const city = car?.address.split(', ')[1];
+  const country = car?.address.split(', ')[2];
   const functionalitiesNumber = Math.floor(Math.random() * 3);
   const n = functionalitiesNumber;
 
