@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkrental_car_project=self.webpackChunkrental_car_project||[]).push([[925],{2153:function(e,r,c){c.r(r);var n=c(2791),t=c(4755),o=c(5700),s=c(9046),a=c(9434),l=c(6299),u=c(6351),i=c(184);r.default=function(){var e=(0,a.I0)(),r=(0,a.v9)(u.Wz);(0,n.useEffect)((function(){e((0,l.c)())}),[e]);return window.scrollTo({top:-80,behavior:"smooth"}),(0,i.jsxs)(o.W,{children:[(0,i.jsx)(s.w,{}),(null===r||void 0===r?void 0:r.length)>0&&(0,i.jsx)(t.O,{cars:r})]})}}}]);
-//# sourceMappingURL=925.b4d98893.chunk.js.map
