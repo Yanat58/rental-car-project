@@ -15,6 +15,7 @@ export const CatalogItem = ({ car }) => {
   const dispatch = useDispatch();
   const favoriteCheck = favoriteCars?.some(item => item.id === car.id);
 
+  console.log(car);
   console.log(car.address);
 
   const city = car.address.split(', ')[1];
