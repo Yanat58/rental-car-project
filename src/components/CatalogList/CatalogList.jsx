@@ -1,17 +1,26 @@
 import { CatalogItem } from 'components/CatalogItem/CatalogItem';
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import car3 from 'images/car3.png';
 import css from './CatalogList.module.css';
+import { ButtonLoadMore } from 'components/ButtonLoadMore/ButtonLoadMore';
+
+const COUNT_CARS = 8;
 
 export const CatalogList = ({ cars }) => {
-  console.log(cars);
+  const [next, setNext] = useState(COUNT_CARS);
+
+  const loadMore = () => {
+    setNext(next + COUNT_CARS);
+  };
 
   return (
     <div className={css.wrap}>
       <ul className={css.catalog__list}>
         {cars?.length > 0 ? (
-          cars.map(car => <CatalogItem key={car.id} car={car} />)
+          cars
+            ?.slice(0, next)
+            ?.map(car => <CatalogItem key={car.id} car={car} />)
         ) : (
           <div className={css.box}>
             <p className={css.text}>No followed cars</p>
@@ -19,10 +28,12 @@ export const CatalogList = ({ cars }) => {
           </div>
         )}
       </ul>
+
+      {next < cars?.length && <ButtonLoadMore onClick={loadMore} />}
     </div>
   );
 };
 
 CatalogList.prototype = {
-  cars: PropTypes.array.isRequired,
+  car: PropTypes.array.isRequired,
 };
